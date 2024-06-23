@@ -23,11 +23,14 @@ public class Color{
 	 * TODO: Revise the code so that it return true only if the input color is valid
 	 * 	and different from the exisitng color before making the change
 	 */
-	public boolean  changeColor(String newColor){
-		this.color = newColor;
 
-		return true;
-	}
+   public boolean changeColor(String newColor) {
+        if (isColorValid(newColor) && !newColor.equals(this.color)) {
+            this.color = newColor;
+            return true;
+        }
+        return false;
+    }
 
 	public boolean isColorValid(String inputColor){
 		String [] validColor = {"red","orange","yellow","green", "cyan", "blue","purple"};
@@ -35,9 +38,8 @@ public class Color{
 			if(inputColor.equals(validColor[i])){
 				return true;
 			}
-			
+
 		}
-		
 		//Failed to find a match, the color is invalid
 		return false;
 	}
