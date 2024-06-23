@@ -1,3 +1,4 @@
+
 all: Main.class
 
 Main.class: Main.java Color.class

@@ -1,3 +1,8 @@
+// == CS400 Spring 2024 File Header Information ==
+// Name: Jingwen Cui
+// Email: jcui58
+// CS Account: jingwenc
+
 /*
  * Test the use of the Color method
  */
