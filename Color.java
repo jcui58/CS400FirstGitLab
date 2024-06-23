@@ -35,6 +35,7 @@ public class Color{
 			if(inputColor.equals(validColor[i])){
 				return true;
 			}
+			
 		}
 		
 		//Failed to find a match, the color is invalid
